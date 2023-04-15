@@ -8,10 +8,12 @@ type Props = {
 };
 
 const Buttons_Styles = {
-  normal: "p-3 bg-light-low-emphasis rounded-3xl dark:bg-dark-low-emphasis",
+  normal:
+    "relative p-3 bg-light-low-emphasis rounded-3xl dark:bg-dark-low-emphasis overflow-hidden flex justify-center items-center active:scale-95",
   "medium-emphasis":
-    "p-3 bg-light-medium-emphasis rounded-3xl dark:bg-dark-medium-emphasis",
-  "high-emphasis": "p-3 text-white bg-light-high-emphasis rounded-3xl",
+    "relative p-3 bg-light-medium-emphasis rounded-3xl dark:bg-dark-medium-emphasis overflow-hidden flex justify-center items-center active:scale-95",
+  "high-emphasis":
+    "relative p-3 text-white bg-light-high-emphasis rounded-3xl overflow-hidden flex justify-center items-center active:scale-95",
 };
 
 export default function Button({
@@ -24,6 +26,7 @@ export default function Button({
     <button
       value={mathSymbol}
       className={Buttons_Styles[buttonStyle]}
+      id="button"
       {...otherProps}
     >
       {numbers}
