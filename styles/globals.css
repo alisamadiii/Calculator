@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply text-black duration-200 bg-light-background dark:bg-dark-background dark:text-white;
+  @apply text-black bg-light-background dark:bg-dark-background dark:text-white;
 }
 
 #button::after {
@@ -17,6 +17,20 @@ body {
 }
 #button:active::after {
   animation: button 0.3s;
+}
+
+#background-pattern {
+  background-image: linear-gradient(#17171c 2px, transparent 2px),
+    linear-gradient(90deg, #17171c 1px, transparent 1px);
+  background-size: 80px 80px;
+  background-position: -2px -2px, -2px -2px, -1px -1px;
+}
+
+html[data-theme="light"] #background-pattern {
+  background-image: linear-gradient(#f1f2f3 2px, transparent 2px),
+    linear-gradient(90deg, #f1f2f3 1px, transparent 1px);
+  background-size: 80px 80px;
+  background-position: -2px -2px, -2px -2px, -1px -1px;
 }
 
 @keyframes button {

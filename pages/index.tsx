@@ -22,6 +22,12 @@ export default function Home() {
     >
       <Dark_Mode />
 
+      <div
+        id="background-pattern"
+        className="absolute w-full h-full duration-200 pointer-events-none -z-10"
+      ></div>
+      <div className="absolute -translate-x-1/2 rounded-b-full -top-56 left-1/2 bg-dark-high-emphasis w-96 h-60 -z-20 blur-3xl"></div>
+
       <div className="w-full max-w-[300px] h-[500px] flex flex-col">
         <div className="flex flex-col items-end justify-end h-full">
           <motion.input

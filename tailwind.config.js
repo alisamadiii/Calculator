@@ -20,6 +20,15 @@ module.exports = {
         "dark-medium-emphasis": "#4E505F",
         "dark-low-emphasis": "#2E2F38",
       },
+      backgroundImage: {
+        pattern: `linear-gradient(rgba(25, 25, 25, .5) 2px, transparent 2px), linear-gradient(90deg, rgba(25, 25, 25, .5) 1px, transparent 1px);`,
+      },
+      backgroundSize: {
+        pattern: "80px 80px",
+      },
+      backgroundPosition: {
+        pattern: "-2px -2px, -2px -2px, -1px -1px",
+      },
     },
   },
   plugins: [],
