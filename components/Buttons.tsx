@@ -89,7 +89,7 @@ export default function Buttons({
       />
       <Button
         buttonStyle="high-emphasis"
-        numbers="x"
+        numbers="×"
         mathSymbol="*"
         onClick={(e) => setValue(value + e.target.value)}
       />

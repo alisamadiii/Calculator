@@ -13,7 +13,7 @@ export default function Dark_Mode({}: Props) {
   }, [theme]);
 
   return (
-    <div>
+    <div className="absolute -translate-x-1/2 left-1/2 top-24">
       <label className="toggler-wrapper style-12">
         <input
           type="checkbox"
