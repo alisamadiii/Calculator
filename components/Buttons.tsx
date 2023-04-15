@@ -163,7 +163,9 @@ export default function Buttons({
         buttonStyle="high-emphasis"
         numbers="="
         mathSymbol="="
-        onClick={(e) => {
+        onClick={() => {
+          if (value.length == 0) return;
+
           try {
             setValue2(eval(value));
             setResult(true);

@@ -26,7 +26,7 @@ body {
   background-position: -2px -2px, -2px -2px, -1px -1px;
 }
 
-html[data-theme="light"] #background-pattern {
+[class="light"] #background-pattern {
   background-image: linear-gradient(#f1f2f3 2px, transparent 2px),
     linear-gradient(90deg, #f1f2f3 1px, transparent 1px);
   background-size: 80px 80px;

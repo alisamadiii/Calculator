@@ -32,7 +32,7 @@ export default function Home() {
             type="text"
             readOnly={true}
             value={value.length == 0 ? "0" : value}
-            className={`w-full font-light text-right bg-transparent opacity-70 ${
+            className={`w-full font-light text-right bg-transparent opacity-70 outline-none ${
               result ? "text-2xl" : "text-5xl pb-3"
             } ${value.toString().length > 10 && "!text-3xl"}`}
             style={{ transition: "font-size .3s, padding .3s" }}
@@ -45,7 +45,7 @@ export default function Home() {
               type="text"
               readOnly={true}
               value={value2.toLocaleString()}
-              className={`w-full pb-3 font-light text-right bg-transparent opacity-70 ${
+              className={`w-full pb-3 font-light text-right bg-transparent opacity-70 outline-none ${
                 value2.toString().length > 10 ? "text-3xl" : "text-5xl"
               }`}
             />
